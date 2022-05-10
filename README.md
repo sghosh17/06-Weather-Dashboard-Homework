@@ -18,4 +18,4 @@ This is a weather dashboard application to show the current and future weather c
 
 ## Link to the deployed application
 
-Click [here](https://sghosh17.github.io/06-Weather-Dashboard/) to access the application.
+Click [here](https://sghosh17.github.io/06-Weather-Dashboard-Homework/) to access the application.
