@@ -1,5 +1,3 @@
-localStorage.clear();
-
 /* This function takes the city name entered in the search box and modifies it and passes it to the Open Weather API to get the
 lat long coordinates for the city and then current weather for the coordinates as well as weather forecast for the next 5 days */
 function findCityDetails() {
