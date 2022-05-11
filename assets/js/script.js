@@ -1,5 +1,7 @@
 localStorage.clear();
 
+/* This function takes the city name entered in the search box and modifies it and passes it to the Open Weather API to get the
+lat long coordinates for the city and then current weather for the coordinates as well as weather forecast for the next 5 days */
 function findCityDetails() {
   var inputCity = $("#cityName")[0].value.trim();
   var updatedCity = inputCity.toLowerCase().split(" ");
@@ -54,6 +56,7 @@ function findCityDetails() {
   });
 }
 
+/* This function uses the input data and retrieves the current weather data from it and renders it */
 function getCurrentWeather(data) {
   $(".results-section").addClass("visible");
 
@@ -82,6 +85,7 @@ function getCurrentWeather(data) {
   getFutureWeather(data);
 }
 
+/* This function uses the input data and retrieves the weather forecast data from it for the next 5 days and renders it */
 function getFutureWeather(data) {
   for (var i = 0; i < 5; i++) {
     var futureWeather = {
